@@ -1,0 +1,65 @@
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-vertical {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.no-padding-horizontal {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.padding-xl {
+  padding: $spacing-xl !important;
+}
+.padding-lg {
+  padding: $spacing-lg !important;
+}
+.padding-md {
+  padding: $spacing-md !important;
+}
+.padding-sm {
+  padding: $spacing-sm !important;
+}
+.padding-xs {
+  padding: $spacing-xs !important;
+}
+.margin-top-xl {
+  margin-top: $spacing-xl !important;
+}
+.margin-top-lg {
+  margin-top: $spacing-lg !important;
+}
+.margin-top-md {
+  margin-top: $spacing-md !important;
+}
+.margin-top-sm {
+  margin-top: $spacing-sm !important;
+}
+.margin-top-xs {
+  margin-top: $spacing-xs !important;
+}
+.padding-vertical-xl {
+  padding-top: $spacing-xl !important;
+  padding-bottom: $spacing-xs !important;
+}
+.padding-vertical-lg {
+  padding-top: $spacing-lg !important;
+  padding-bottom: $spacing-lg !important;
+}
+.padding-vertical-md {
+  padding-top: $spacing-md !important;
+  padding-bottom: $spacing-md !important;
+}
+.padding-vertical-sm {
+  padding-top: $spacing-sm !important;
+  padding-bottom: $spacing-sm !important;
+}
+.padding-vertical-xs {
+  padding-top: $spacing-xs !important;
+  padding-bottom: $spacing-xs !important;
+}
+.padding-vertical-xxs {
+  padding-top: $spacing-xxs !important;
+  padding-bottom: $spacing-xxs !important;
+}

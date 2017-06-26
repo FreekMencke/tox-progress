@@ -1,0 +1,14 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "text";
+@import "spacing";
+@import "grid";
+
+.header-img {
+  background: $accent-color;
+  color: $font-color-light;
+  font-size: 1.8em;
+  margin-bottom: 4%;
+  @include angle(after, false, 2deg);
+}

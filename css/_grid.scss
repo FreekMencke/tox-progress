@@ -1,0 +1,69 @@
+.container {
+  display: block;
+  margin: auto;
+  @media (max-width: ($grid-width-sm - 1)) {
+    width: auto;
+  }
+  @media (min-width: $grid-width-sm) {
+    width: ($grid-width-sm - 18);
+  }
+  @media (min-width: $grid-width-md) {
+    width: ($grid-width-md - 18);
+  }
+  @media (min-width: $grid-width-lg) {
+    width: ($grid-width-lg - 30);
+  }
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  .no-padding {
+    padding: 0;
+  }
+}
+
+@mixin col-generate($type){
+  .col#{$type}25 {
+    width: 25%;
+  }
+  .col#{$type}33 {
+    width: 33.33%;
+  }
+  .col#{$type}50 {
+    width: 50%;
+  }
+  .col#{$type}66 {
+    width: 66.66%;
+  }
+  .col#{$type}75 {
+    width: 75%;
+  }
+  .col#{$type}100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: $grid-width-sm) {
+  @include col-generate("-sm-");
+}
+@media (min-width: $grid-width-md) {
+  @include col-generate("-md-");
+}
+@media (min-width: $grid-width-lg) {
+  @include col-generate("-lg-");
+}
+@include col-generate("-");
+
+.clearfix {
+  clear: both;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}

@@ -1,0 +1,114 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 5px;
+}
+h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.3em;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}
+p {
+  padding-bottom: 8px;
+}
+a {
+  cursor: pointer;
+  color: $accent-color;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+dt {
+  font-weight: 600;
+}
+dd {
+  padding-left: 12px;
+  padding-bottom: 5px;
+}
+.no-underline:hover {
+  text-decoration: none;
+}
+.jumbotron {
+  h1 {
+    font-size: 4em;
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 3.2em;
+    }
+  }
+}
+.bold,
+.bold * {
+  font-weight: 600;
+}
+.accent {
+  color: $accent-color;
+}
+.color-normal {
+  color: $font-color;
+}
+.color-light {
+  color: $font-color-light;
+}
+.text-shadow {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.text-shadow-light {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.text-center {
+  text-align: center;
+}
+.glow-hover {
+  color: $font-color;
+  transition: color 0.4s ease;
+  &:hover {
+    color: $accent-color;
+  }
+}
+.glow-hover-light {
+  color: $font-color-light;
+  transition: color 0.4s ease;
+  &:hover {
+    color: $accent-color;
+  }
+}
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  &:hover {
+    overflow: visible;
+    white-space: normal;
+  }
+}
+.header-underline {
+  border-bottom: 2px solid $accent-color;
+  margin-bottom: 30px;
+}
+.mark {
+  padding: 0 2px;
+  background-color: $accent-color;
+  color: $font-color-light;
+}
