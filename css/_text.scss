@@ -1,20 +1,21 @@
 * {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h1,
 h2,
 h3 {
+  font-family: 'Josefin Sans';
   padding-bottom: 5px;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   font-weight: 600;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 2.0em;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 @media (max-width: 767px) {
   h1 {
@@ -38,6 +39,12 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+pre {
+  display: inline-block;
+  border-radius: 3px;
+  background: lightgrey;
+  padding: 2px 4px;
 }
 dt {
   font-weight: 600;

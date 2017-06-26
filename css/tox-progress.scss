@@ -1,0 +1,27 @@
+.tox-progress {
+  position: relative;
+  .radial-outer,
+  .radial-inner {
+    border-radius: 50%;
+  }
+  .radial-inner,
+  .radial-mask-1,
+  .radial-mask-2,
+  .radial-mask-3,
+  .tox-progress-content {
+    position: relative;
+  }
+  .radial-mask-1,
+  .radial-mask-2,
+  .radial-mask-3 {
+    transform-origin: bottom center;
+  }
+  .radial-mask-1,
+  .radial-mask-3 {
+    transform: rotate(90deg);
+  }
+  .radial-mask-2 {
+    transform: rotate(270deg);
+  }
+
+}

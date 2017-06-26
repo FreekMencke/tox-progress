@@ -7,20 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/tox-progress.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/tox-progress.js"></script>
 
     <title>ToxProgress</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ToxProgress.create();
+            ToxProgress.animate();
+        });
+    </script>
 </head>
 <body>
 
-    <div class="header-img text-center padding-md">
-        <h1>ToxProgress</h1>
-        <p>A JavaScript library for radial progress bars.</p>
-    </div>
+<div class="header-img text-center padding-md">
+    <h1>ToxProgress</h1>
+    <p>A JavaScript library for radial progress bars.</p>
+</div>
 
-    <div class="container">
+<div class="container ">
+    <article>
+        <h2>Introduction</h2>
+        <p>test
+        <pre>test</pre>
+        </p>
+    </article>
 
-    </div>
+    <article>
+        <h2>Examples</h2>
+        <div class="col-25 padding-sm">
+            <div style="margin: auto" class="tox-progress" data-size="150" data-thickness="10" data-color="#229922"
+                 data-background="#ffffff" data-progress="25" data-speed="500">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <h2 class="text-center" style="width: 100%">Skill</h2>
+                </div>
+            </div>
+            <h3 class="text-center margin-top-xs">25%</h3>
+        </div>
+        <div class="col-25 padding-sm">
+            <div style="margin: auto" class="tox-progress" data-size="150" data-thickness="10" data-color="#229922"
+                 data-background="#ffffff" data-progress="50" data-speed="500">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <div class="text-center" style="width: 100%">
+                        <h2 style="padding-bottom: 0px">Beautiful</h2>
+                        <p style="padding: 0 10px;">Works like a charm</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center margin-top-xs">50%</h3>
+        </div>
+        <div class="col-25 padding-sm">
+            <div style="margin: auto" class="tox-progress" data-size="150" data-thickness="10" data-color="#229922"
+                 data-background="#ffffff" data-progress="75" data-speed="500">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <img height="90" style="margin:auto" src="img/Javascript_badge.png"/>
+                </div>
+            </div>
+            <h3 class="text-center margin-top-xs">75%</h3>
+        </div>
+        <div class="col-25 padding-sm">
+            <div style="margin: auto" class="tox-progress" data-size="150" data-thickness="10" data-color="#229922"
+                 data-background="#ffffff" data-progress="100" data-speed="500">
+                <div class="tox-progress-content" data-vcenter="true">
+                    <p style="padding-left: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+            <h3 class="text-center margin-top-xs">100%</h3>
+        </div>
+    </article>
+</div>
 
 </body>
 </html>
