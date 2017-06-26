@@ -1,0 +1,121 @@
+form {
+  font-size: 18px;
+  div.form-row {
+    padding: 10px 0;
+    clear: both;
+  }
+}
+.label {
+  display: inline-block;
+  line-height: 28px;
+}
+.form-input {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  padding: 2px 6px;
+  outline-color: $accent-color;
+  border: 1px solid darken($accent-color, 10%);
+  vertical-align: bottom;
+}
+.button {
+  padding: 5px 6px 4px;
+  background-color: $accent-color;
+  color: $font-color-light;
+  font-weight: 600;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid darken($accent-color, 12%);
+  vertical-align: bottom;
+  &:hover {
+    margin-top: 1px;
+    border-bottom: 1px solid darken($accent-color, 12%);
+  }
+}
+.button-no-down:hover {
+    margin-top: 0;
+    border-bottom: 2px solid darken($accent-color, 12%);
+    background-color: lighten($accent-color, 7%);
+    border-bottom: 2px solid darken(lighten($accent-color, 7%), 12%);
+}
+.button-block {
+  display: block;
+  width: 100%;
+}
+.button-lg {
+  font-size: 24px;
+}
+.button-sm {
+  padding: 3px 5px;
+  font-size: 16px;
+}
+@mixin generateButtonColors($color){
+  background-color: $color;
+  border-bottom: 2px solid darken($color, 12%);
+}
+.button-dark {
+  @include generateButtonColors(darken($accent-color, 7%));
+}
+.button-light {
+  @include generateButtonColors(lighten($accent-color, 7%));
+}
+.button-invert {
+  @include generateButtonColors(invert($accent-color));
+}
+.button-icon {
+  text-align: center;
+  padding: 4px;
+  font-size: 22px;
+  line-height: 25px;
+  vertical-align: middle;
+  width: 38px;
+}
+// Toggle is inspired from: http://callmenick.com/post/css-toggle-switch-examples
+.toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.toggle + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 60px;
+}
+input.toggle + label:before,
+input.toggle + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.toggle + label:before {
+  right: 1px;
+  background-color: #eee;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+input.toggle + label:after {
+  width: 29px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.toggle:checked + label:before {
+  background-color: $accent-color;
+}
+input.toggle:checked + label:after {
+  margin-left: 30px;
+}

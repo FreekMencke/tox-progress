@@ -40,8 +40,12 @@ a {
     text-decoration: underline;
   }
 }
+b {
+  font-weight: bold;
+}
 pre {
-  display: inline-block;
+  font-size: 0.9em;
+  display: inline;
   border-radius: 3px;
   background: lightgrey;
   padding: 2px 4px;
