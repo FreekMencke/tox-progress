@@ -1,4 +1,5 @@
 # ToxProgress
+![test](https://thumbs.gfycat.com/LimpAmpleCuckoo-size_restricted.gif)
 ## Introduction
 
 This library was made to easily create **animated radial progress bars**.
@@ -47,4 +48,3 @@ Then include the following code on your website:
 The `ToxProgress.create();` function generates everything needed. It has to be called before the `ToxProgress.animate();` function. The `ToxProgress.animate();` function can be called whenever you want.
 
 If you want to reset the animation, call `ToxProgress.create();` before you call `ToxProgress.animate();` again.
-
