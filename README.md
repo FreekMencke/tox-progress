@@ -9,7 +9,7 @@ The goal of these animated radial progress bars is to add a stylized way to show
 
 The way to include a **ToxProgressBar** to your website is to link the `tox-progress.js` and `tox-progress.css` files on your web page. You can then add a ToxProgressBar by using this tag:
 
-```
+``` javascript
 <div class="tox-progress" data-size="180" data-thickness="12" data-color="#229922" data-background="#ffffff" data-progress="25" data-speed="500"></div>
 ```
 
@@ -23,7 +23,7 @@ The div needs to have the `class="tox-progress"`. This makes the div visible to 
 
 There is also the possibility to add content inside the radial progress bar. Add this div inside the `class="tox-progress"` div:
 
-```
+``` javascript
 <div class="tox-progress" data-size="180" data-thickness="12" data-color="#229922" data-background="#ffffff" data-progress="25" data-speed="500">
      <div class="tox-progress-content" data-vcenter="true">
          //Add content here
@@ -35,7 +35,7 @@ So first add the `class="tox-progress-content"` to the div. If you want this con
 
 Then include the following code on your website:
 
-```
+``` javascript
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         ToxProgress.create();
