@@ -1,5 +1,6 @@
 # ToxProgress
 ![test](https://thumbs.gfycat.com/LimpAmpleCuckoo-size_restricted.gif)
+<div style="text-align: center;"><a href="https://toxsickcoder.github.io/ToxProgress/index.html">Click here for the live version</a></div>
 ## Introduction
 
 This library was made to easily create **animated radial progress bars**.
