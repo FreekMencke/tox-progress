@@ -47,13 +47,11 @@ ToxProgressBar.prototype.animate = function () {
                 element.querySelector('.radial-mask-3').style.visibility = 'visible';
                 if (+progress === 100) {
                     setTimeout(function () { // full, hide mask to prevent white stripes.
-                        element.querySelector('.radial-mask-2').style.visibility='hidden';
+                        element.querySelector('.radial-mask-2').style.visibility = 'hidden';
                     }, speed / 2);
                 }
             }, speed / 2);
-        } else {
-            element.querySelector('.radial-mask-1').style.transform = 'rotate(' + (90 + (progress * 3.6)) + 'deg)';
-        }
+        } else element.querySelector('.radial-mask-1').style.transform = 'rotate(' + (90 + (progress * 3.6)) + 'deg)';
     }, 50);
 };
 
