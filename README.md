@@ -1,6 +1,6 @@
 # ToxProgress
 ![test](https://thumbs.gfycat.com/LimpAmpleCuckoo-size_restricted.gif)
-<center><a href="https://toxsickcoder.github.io/tox-progress">Click here for the live version</a></center>
+<center><a href="https://FreekMencke.github.io/tox-progress">Click here for the live version</a></center>
 
 ## Introduction
 
